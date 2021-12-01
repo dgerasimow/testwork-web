@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+</head>
+<body>
+<h1>Check your weather!</h1>
+<form action="/weather" method="post" name="weather" id="weather">
+    Write your city
+    <input name="city" id="city" type="text">
+
+    <input name="sendButton" type="submit" value="Check">
+</form>
+<div class="info" id="info">
+    <h2>City</h2>
+    <h4 id="cityName"></h4>
+    <h2>Temperature</h2>
+    <h4 id="temperature"></h4>
+    <h2>Current weather</h2>
+    <h4 id="currWeather"></h4>
+    <h2>Weather description</h2>
+    <h4 id="weatherDesc"></h4>
+
+</div>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/weatherUpdate.js"></script>
